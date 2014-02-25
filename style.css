@@ -1,38 +1,93 @@
+html {
+    background: 
+        linear-gradient(transparent 0, rgba(125, 168, 113, 1) 30%),
+        url(WhiteBackground.png) -40% 0 repeat-x,
+        url(BlackBackground.png) -20% 0 repeat-x, 
+        #7DA871;
+
+        background-size: 100% 100%, auto, auto, auto;
+        background-attachment: fixed;
+}
+
+html.home {
+    background: 
+        linear-gradient(transparent 0, rgba(125, 168, 113, 0.8) 20%, rgba(125, 168, 113, 0.8) 80%, transparent 100%),
+        url(WhiteBackground.png) -40% 0 repeat-x,
+        url(BlackBackground.png) -20% 0 repeat-x, 
+        #7DA871;
+    background-size: 100% 100%, auto, auto, auto;
+    background-attachment: fixed;
+}
 
 body {
-    font-family: 'Times Roman', serif;
-    background-color: #ffe;
-    color: green;
+    margin: 0px auto;
+    width: 600px;
+    font-family: Cardo;
+
+}
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+header[role=banner] {
+
+    text-align: center;
 
 }
 
-div#sidebar {
-    width: 20%;
-    float: left;
-}
-
-div#main {
-    width: 80%;
+#logo {
+    width: 300px;
+    display: block;
     float: right;
+
+
 }
 
-div#content {
-    width: 80%;
-    margin: 11px auto 10px;
+.home #logo {
+    width: auto;
+    float: none;
 }
 
-article footer {
-    text-align: right;
-    font-size: smaller;
-    font-style: italic;
+nav {
+    clear: both;
 }
 
-h1, h2 {
-    font-family: 'Montserrate Alternates', sans-serif;
-    font-weight: 700;
-}
-h3, h4 {
-    font-family: 'Montserrate Alternates', sans-serif;
-    font-weight: 400;
+nav ul {
+    list-style: none;
+    margin-left: 0; 
+    padding-left: 0;
+
 }
 
+nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    line-height: 150px;
+    background-color: white;
+    border-radius: 75px;
+    display: block;
+
+}
+/*
+#nav-about a {
+    background-color: #7DA871;
+}
+
+#nav-documentation a {
+    background-color: #EAE18F;
+}
+
+#nav-download a {
+    background-color: #7DA871;
+}*/
