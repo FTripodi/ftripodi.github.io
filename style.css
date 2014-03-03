@@ -38,6 +38,10 @@ header[role=banner] {
 
 }
 
+footer {
+    text-align: center;
+}
+
 #logo {
     width: 300px;
     display: block;
