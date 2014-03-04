@@ -18,11 +18,24 @@ html.home {
     background-size: 100% 100%, auto, auto, auto;
     background-attachment: fixed;
 }
+h1 {
+    font-family: "Titillium Web", sans-serif;
+}
+p {
+    font-family: "Titillium Web", sans-serif;
+}
 a:link,
 a:active,
-a:visited
+a:visited,
 a:hover{
-    text-decoration: none
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover,
+a:active{
+    color: #900;
 }
 
 body {
@@ -47,7 +60,6 @@ header[role=banner] {
 footer {
     text-align: center;
 }
-
 #logo {
     width: 300px;
     display: block;
@@ -79,15 +91,30 @@ nav li {
 
 }
 
-nav a {
+nav a:link,
+nav a:visited {
     text-decoration: none;
+    font-weight: bold;
     color: black;
     width: 150px;
     line-height: 150px;
-    background-color: white;
+    background-color: gray;
     border-radius: 75px;
     display: block;
 
+}
+nav a:hover,
+nav a:active{
+    width: 150px;
+    line-height: 150px;
+    background-color: #900;
+    border-radius: 75px;
+    display: block;
+}
+.about nav li.nav-about, 
+.install nav li.nav-documentation,
+.demo nav li.nav-download {
+    color: #900;
 }
 /*
 #nav-about a {
