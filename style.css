@@ -18,13 +18,13 @@ html.home {
     background-size: 100% 100%, auto, auto, auto;
     background-attachment: fixed;
 }
-a:link,
+/*a:link,
 a:active,
 a:visited
 a:hover{
     text-decoration: none
 }
-
+*/
 body {
     margin: 0px auto;
     width: 600px;
